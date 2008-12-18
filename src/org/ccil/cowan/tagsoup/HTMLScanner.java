@@ -320,7 +320,7 @@ public class HTMLScanner implements Scanner, Locator {
 			r = new PushbackReader(r0);
 			}
 		else {
-			r = new PushbackReader(new BufferedReader(r0));
+			r = new PushbackReader(new BufferedReader(r0, 200));
 			}
 
 		int firstChar = r.read();	// Remove any leading BOM
